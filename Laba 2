@@ -1,0 +1,28 @@
+def main_home(a):
+    b = a.replace(" ", "")
+    v = ""
+    for z in a:
+        if z not in ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9'):
+            v = v + z
+    for i in sorted(set(v)):
+        print(i, "=", a.count(i))
+print("Меню: 1) Підрахунок букв у слові")
+print("      2)Розташувати слова у алфавітному порядку")
+print("      3)Вихід")
+mat = int(input("Виберіть потрібне: ", ))
+if mat == 2:
+    f = input()
+    words = set()
+    result = ''
+    for word in f.split():
+        if word not in words:
+            result = result + word + ' '
+            words.add(word)
+    print(result)
+elif mat == 1:
+  a = input('Ведіть слово:', )
+  main_home(a)
+elif mat == 3:
+    print('Вихід')
+else:
+    print("Значення якого немає в списку")
