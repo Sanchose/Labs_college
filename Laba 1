@@ -1,0 +1,60 @@
+print("Hello World")
+
+
+
+
+a = input("Write words:  ", )
+c = a [::-1]
+b = input("Write numbers:   ",   )
+d = b [::-1]
+print("Reversed text:", c + d)
+
+
+
+
+a = input("Write words:  ", )
+for b in a:
+    c = b*2
+    print(c , end = "")
+    
+    
+    
+    
+    
+    
+    print("Майн калькулятор")
+operation = input("Вибери фунцію яку хатиш:",  )
+b = float(input("x="))
+c = float(input("y="))
+if operation == "+":
+    rezult = (b+c)
+elif operation =="-":
+    rezult = (b-c)
+elif operation =="*":
+    rezult = (b*c)
+elif operation =="/":
+    rezult = (b/c)
+elif operation =="**":
+    rezult = (b**c)
+elif operation =="sqrt":
+    rezult = (b**0.5)
+print(rezult)
+
+
+
+
+def min_fam():
+ alphabet = "abcdefghigklmnopqrstuvwxyzabcdefghigklmnopqrstuvwxyz"
+ key = int(2)
+ encrypted = ""
+ for letter in g:
+     position = alphabet.find(letter)
+     newPosition = position + key
+     if letter in alphabet:
+         encrypted = encrypted + alphabet[newPosition]
+     else:
+         encrypted = encrypted + letter
+ print(encrypted)
+
+g = input()
+(min_fam())
