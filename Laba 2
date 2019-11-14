@@ -11,16 +11,18 @@ print("      2)Розташувати слова у алфавітному по�
 print("      3)Вихід")
 mat = int(input("Виберіть потрібне: ", ))
 if mat == 2:
-    f = input()
+    f = input("Введіть слова:").replace("!","").replace("@","").replace("#","").replace("$","").replace("%","").replace("^","").replace("&","").replace("*","").replace("(","").replace(")","").replace("+","").replace("_","").replace("-","").replace(":","").replace(";","").replace(".","").replace(",","").replace(" ","").replace("<","").replace(">","")
+    f = f.lower()
     words = set()
     result = ''
     for word in f.split():
         if word not in words:
-            result = result + word + ' '
+            c = result + word + ' '
             words.add(word)
-    print(result)
+            print(c, end="")
 elif mat == 1:
-  a = input('Ведіть слово:', )
+  a = input('Ведіть слово:', ).replace("!","").replace("@","").replace("#","").replace("$","").replace("%","").replace("^","").replace("&","").replace("*","").replace("(","").replace(")","").replace("+","").replace("_","").replace("-","").replace(":","").replace(";","").replace(".","").replace(",","").replace(" ","").replace("<","").replace(">","")
+  a = a.lower()
   main_home(a)
 elif mat == 3:
     print('Вихід')
