@@ -22,8 +22,8 @@ for b in a:
     
     
     
-    print("Майн калькулятор")
-operation = input("Вибери фунцію яку хатиш:",  )
+    print("Calculator")
+operation = input("Choose operation:",  )
 b = float(input("x="))
 c = float(input("y="))
 if operation == "+":
